@@ -14,10 +14,3 @@ We will not give it to any third party or publish it publicly anywhere.
 # 3 Citation
 If you find Dataset useful in your work, please consider citing the following BibTeX entry:
 
-```
-cd data
-pip install -r requirements.txt
-python demo --pth './anno/class_train.json'
-python demo --pth './anno/class_val.json'
-```
-
