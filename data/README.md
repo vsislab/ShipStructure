@@ -10,17 +10,8 @@ Please email your full name and affiliation and sign a license agreement to the 
 We ask for your information only to make sure the dataset is used for non-commercial purposes. 
 We will not give it to any third party or publish it publicly anywhere.
 
-# 3. Download
-We recommend Anaconda as Python package management system. Annotations file name as 'VesselReID.json', please obtain the file by email .
 
-```python
-conda create -n demo python=3.6
-conda activate demo
-pip install -r requirements.txt
-python demo.py --pth '$path$/class_train.json' or '$path$/class_test.json' --save_pth '$path$/datasets/VesselReID'    # pth is the address of the annotations file and save_pth is the address where the data set is downloaded and saved
-```
-
-# 4. Citation
+# 3 Citation
 If you find Dataset useful in your work, please consider citing the following BibTeX entry:
 
 ```
