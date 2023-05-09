@@ -21,7 +21,7 @@ python demo.py --pth '$path$/class_train.json' or '$path$/class_test.json' --sav
 ```
 
 # 4. Citation
-If you find VesselReID Dataset useful in your work, please consider citing the following BibTeX entry:
+If you find Dataset useful in your work, please consider citing the following BibTeX entry:
 
 ```
 cd data
