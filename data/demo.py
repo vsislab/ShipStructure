@@ -15,7 +15,7 @@ import os
 import json
 
 
-parser = argparse.ArgumentParser(description='Downloading and splitting VesselReID datasets')
+parser = argparse.ArgumentParser(description='Downloading the MSVS datasets')
 
 parser.add_argument('--pth',
                         help='Address of the dataset annotation file',
