@@ -1,10 +1,10 @@
 # Ship vision critical area exploration
 
 ## Introduction
-This code is used to train different models for ship classification tasks, including both pure image classification and classification guided by the addition of key regions, in addition to conducting structure-texture generation experiments, Class Activation Mapping(CAM) image visualization of ship images, etc.
+This code is used to train different models for ship recognition tasks, including both pure image recognition and recognition guided by the addition of key regions, in addition to conducting structure-texture generation experiments, Class Activation Mapping(CAM) image visualization of ship images, etc.
 
 ## Code Overview
-The structure of this code is to add functions to the general image classification. The main building block functions include
+The structure of this code is to add functions to the general image recognition. The main building block functions include
 
 * ./data: Dataset annotation and associated scripts and image storage locations.
 * ./configs: Parameter configuration module.
@@ -24,7 +24,7 @@ sh ./scripts/data_preparation_class.sh
 sh ./scripts/data_preparation.sh
 ```
 
-**Training Classification Networks**
+**Training recognition Networks**
 
 The following code is introduced using the ResNet family of networks as an example.
 
