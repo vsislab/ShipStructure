@@ -25,13 +25,13 @@ sh ./scripts/data_preparation.sh
 
 **Training recognition Networks**
 
-* The following describes the training of networks using the vanilla version of the data.
+* Train networks using the vanilla ship images.
 
 ```shell
 sh ./scripts/train_resnet_vallinia.sh
 ```
 
-* The following describes the training of networks using data guided by key regions.
+* Train networks using keypoint-aware ship images.
 
 ```shell
 sh ./scripts/train_resnet_add.sh
@@ -44,7 +44,7 @@ sh ./scripts/cam_vallina_resnet.sh
 sh ./scripts/cam_add_resnet.sh
 ```
 
-**Structure-Texture Generation Network**
+**Structure-to-Texture Generation Network**
 For generating network selection, we used [CycleGAN and pix2pix in PyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix "CycleGAN and pix2pix in PyTorch"), without any additional modifications, and completed the experiments using only paired ship structure-texture images as data.
 
 * Data preparation and training
@@ -52,12 +52,12 @@ For generating network selection, we used [CycleGAN and pix2pix in PyTorch](http
 sh ./scripts/gan_download.sh
 ```
 
-* Testing with test dataset
+* Test with test dataset
 ```shell
 python test.py --dataroot ./datasets/ships --name ships_pix2pix --model pix2pix --direction BtoA --num_test 1000 --epoch 200
 ```
 
-* Testing with multi-view structural images generated from 3d data
+* Test with multi-view structural images generated from 3D data
 ```shell
 python test.py --dataroot ./datasets/multi_view_ships --name ships_pix2pix --model pix2pix --direction BtoA --num_test 114 --epoch 200
 ```
