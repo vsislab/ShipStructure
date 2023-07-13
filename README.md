@@ -1,10 +1,10 @@
-# Ship vision critical area exploration
+# Ship Perception with Visual Structure
 
 ## Introduction
-This code is used to train different models for ship recognition tasks, including both pure image recognition and recognition guided by the addition of key regions, in addition to conducting structure-texture generation experiments, Class Activation Mapping(CAM) image visualization of ship images, etc.
+This repository provides the source code for our research on structure-based ship perception, including the vanilla ship recognition, keypoint-aware ship recognition, structure-to-texture ship generation, etc.
 
 ## Code Overview
-The structure of this code is to add functions to the general image recognition. The main building block functions include
+The structure of the repository is as follows：
 
 * ./data: Dataset annotation and associated scripts and image storage locations.
 * ./configs: Parameter configuration module.
@@ -13,8 +13,7 @@ The structure of this code is to add functions to the general image recognition.
 * ./scripts: Scripts related to model training, inference, image and code download, visualization.
 * ./visualization: CAM image visualization and experimental performance saving.
 
-## Installation
-If the data is slow to download or the file is missing, you can contact us by email and ask for the data without commercial or other use.
+## Implementation
 **Environment installation and data preparation**
 ```shell
 conda create -n ships_class python==3.6
@@ -25,8 +24,6 @@ sh ./scripts/data_preparation.sh
 ```
 
 **Training recognition Networks**
-
-The following code is introduced using the ResNet family of networks as an example.
 
 * The following describes the training of networks using the vanilla version of the data.
 
