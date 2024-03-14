@@ -15,12 +15,9 @@ import os
 import json
 
 
-parser = argparse.ArgumentParser(description='Downloading the MSVS datasets')
+parser = argparse.ArgumentParser(description='Downloading and splitting VesselReID datasets')
 
-parser.add_argument('--pth',
-                        help='Address of the dataset annotation file',
-                        type=str,
-                        default='./anno/class_train.json')
+
 parser.add_argument('--save_pth',
                         help='Download save dataset address',
                         type=str,
@@ -104,24 +101,27 @@ def open_json(json_fth):
         json_f = json.load(f)
     return json_f
 
-def download_img(url, img_name, save_pth='./images'):
-    
-    img_pth = f'{save_pth}/{img_name}'
-    if not os.path.exists(img_pth):
+def download_img(url, img_name, date_type, save_pth='./'):
+    try:
         img = get_data(url)
+        pths = f'{save_pth}/{date_type}2023'
+        img_pth = f'{pths}/{img_name}'
         with open(img_pth, 'wb') as f:
             f.write(img)
-            time.sleep(1)
+    except:
+        print(img_name, 'failure to download !!!')
+        
 if __name__=='__main__':
     args = parser.parse_args()
-    
-    data = open_json(args.pth)        # Loading annotation files
     save_root = args.save_pth
-    mkdir(save_root)
-    for img in data['images']:
-        img_name = img['file_name']
-        download_url = img['download_url'][0]
-        
-        download_img(download_url, img_name, save_pth=save_root)
+    data_files = ['train', 'test', 'val']
+    for date_type in data_files:
+        ann_pth = f'./anno/ships_keypoints_{date_type}2023.json'
+        mkdir(f'{save_root}/{date_type}2023/')
+        for img in data['images']:
+            img_name = img['file_name']
+            download_url = img['download_url'][0]
+            
+            download_img(download_url, img_name, date_type, save_pth=save_root)
         
         
