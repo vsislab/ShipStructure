@@ -1,7 +1,7 @@
 # 1.Dataset Introduction
-Our MSVS dataset is supposed to be the first ship dataset with structural annotations, in which the visual structure of each ship is represented by 20 keypoints. Statistically, there are 12,199 images of 949 maritime ships in the MSVS dataset, and the dataset is further divided into training, validation and testing subsets for the convenience of practical usage. 
+Our SLAD dataset is supposed to be the first ship dataset with structural annotations, in which the visual structure of each ship is represented by 20 keypoints. Statistically, there are 12,199 images of 949 maritime ships in the SLAD dataset, and the dataset is further divided into training, validation and testing subsets for the convenience of practical usage. 
 
-
+Run the demo.py file or contact us if you need to get the image files for SLAD Dataset.
 
 # 2. Dataset Availability
 To encourage related research, we will provide the dataset according to your request. 
