@@ -22,6 +22,7 @@ pip install -r requirements.txt
 ```
 
 **Data preparation**
+Please use the following command to download and retrieve images from the annotation files located in /data/anno/. If you encounter difficulties during the download process or come across specific missing data, please inform us of the missing file names so that we can assist you in obtaining those files.
 ```shell
 sh ./scripts/data_preparation_class.sh
 sh ./scripts/data_preparation.sh
