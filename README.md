@@ -19,9 +19,14 @@ The structure of the repository is as follows：
 conda create -n ships_class python==3.6
 conda activate ships_class
 pip install -r requirements.txt
+```
+
+**Data preparation**
+```shell
 sh ./scripts/data_preparation_class.sh
 sh ./scripts/data_preparation.sh
 ```
+
 
 **Training recognition Networks**
 
