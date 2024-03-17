@@ -14,7 +14,7 @@ The structure of the repository is as follows：
 * ./visualization: CAM image visualization and experimental performance saving.
 
 ## Implementation
-**Environment installation and data preparation**
+**Environment installation**
 ```shell
 conda create -n ships_class python==3.6
 conda activate ships_class
