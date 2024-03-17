@@ -18,6 +18,10 @@ import json
 parser = argparse.ArgumentParser(description='Downloading and splitting VesselReID datasets')
 
 
+parser.add_argument('--pth',
+                        help='Download save dataset address',
+                        type=str,
+                        default='./anno/ships keypoints train2023.json')
 parser.add_argument('--save_pth',
                         help='Download save dataset address',
                         type=str,
@@ -104,7 +108,7 @@ def open_json(json_fth):
 def download_img(url, img_name, date_type, save_pth='./'):
     try:
         img = get_data(url)
-        pths = f'{save_pth}/{date_type}2023'
+        pths = save_pth
         img_pth = f'{pths}/{img_name}'
         with open(img_pth, 'wb') as f:
             f.write(img)
@@ -114,13 +118,13 @@ def download_img(url, img_name, date_type, save_pth='./'):
 if __name__=='__main__':
     args = parser.parse_args()
     save_root = args.save_pth
-    data_files = ['train', 'test', 'val']
-    for date_type in data_files:
-        ann_pth = f'./anno/ships_keypoints_{date_type}2023.json'
-        mkdir(f'{save_root}/{date_type}2023/')
-        for img in data['images']:
-            img_name = img['file_name']
-            download_url = img['download_url'][0]
+    file_pth = args.pth
+    data = open_json(file_pth)
+    mkdir(save_root)
+    for img in data['images']:
+        img_name = img['file_name']
+        download_url = img['download_url'][0]
+        download_img(download_url, img_name, save_pth=save_root):
             
             download_img(download_url, img_name, date_type, save_pth=save_root)
         
