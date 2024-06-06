@@ -71,4 +71,4 @@ python test.py --dataroot ./datasets/multi_view_ships --name ships_pix2pix --mod
 
 ## Contact
 If you have any questions about the code and data, please contact.
-Mingxin Zhang (202020646@mail.sdu.edu.cn)
+email (info@vsislab.com)
