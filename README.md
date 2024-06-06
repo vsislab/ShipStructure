@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 **Data preparation**
 
-Please use the following command to download and retrieve images from the annotation files located in /data/anno/. If you encounter difficulties during the download process or come across specific missing data, please inform us of the missing file names so that we can assist you in obtaining those files.
+To download and retrieve images from the annotation files in /data/anno/, please use the following command. Before executing the script, kindly sign the AgreementForSLAD.docx file located in /data/ and send it to info@vsislab.com via email. We will proceed with the image download once we receive and confirm your signed agreement. If you encounter difficulties or come across missing data, please inform us of the file names so we can assist you promptly.
 ```shell
 sh ./scripts/data_preparation_class.sh
 sh ./scripts/data_preparation.sh
