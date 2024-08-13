@@ -1,4 +1,4 @@
-# Ship Perception with Visual Structure
+# Ship Landmark: An Informative Ship Image Annotation and Its Applications [PDF](https://ieeexplore.ieee.org/abstract/document/10550071)
 
 ## Introduction
 This repository provides the source code for our research on structure-based ship perception, including the vanilla ship recognition, keypoint-aware ship recognition, structure-to-texture ship generation, etc.
@@ -72,3 +72,13 @@ python test.py --dataroot ./datasets/multi_view_ships --name ships_pix2pix --mod
 ## Contact
 If you have any questions about the code and data, please contact.
 email (info@vsislab.com)
+For SLAD, please refer to:
+```
+@article{zhang2024ship,
+  title={Ship Landmark: An Informative Ship Image Annotation and Its Applications},
+  author={Zhang, Mingxin and Zhang, Qian and Song, Ran and Rosin, Paul L and Zhang, Wei},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  year={2024},
+  publisher={IEEE}
+}
+```
