@@ -1,7 +1,7 @@
 # Ship Landmark: An Informative Ship Image Annotation and Its Applications [PDF](https://ieeexplore.ieee.org/abstract/document/10550071)
 
 ## Introduction
-This repository provides the source code for our research on structure-based ship perception, including the vanilla ship recognition, keypoint-aware ship recognition, structure-to-texture ship generation, etc.
+By summarizing the locations of such areas in ships, we define 20 ship landmarks and build the Ship Landmark Dataset (SLAD), the first ship dataset with landmark annotations. We also provide a benchmark for ship landmark detection by evaluating state-of-the-art landmark detection methods on the newly built SLAD. This repository provides the source code for our research on structure-based ship perception, including the vanilla ship recognition, keypoint-aware ship recognition, structure-to-texture ship generation, etc. 
 
 ## Code Overview
 The structure of the repository is as follows：
