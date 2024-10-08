@@ -18,6 +18,16 @@ The structure of the repository is as follows：
 * ./scripts: Scripts related to model training, inference, image and code download, visualization.
 * ./visualization: CAM image visualization and experimental performance saving.
 * ./demo: Demonstration of ship detection task using mmpose.
+
+## Ship Landmark Detection
+**Preparation**
+According to the mmpose official documentation (https://github.com/open-mmlab/mmpose/tree/dev-1.x), configure mmpose. The current operation assumes in the current directory. 
+```shell
+mv ./demo/slad_dataset.py mmpose-main/mmpose/datasets/datasets/body/
+mv -f ./demo/__init__.py mmpose-main/mmpose/datasets/datasets/body/
+mv ./demo/slad.py mmpose-main/configs/base/datasets/
+```
+
   
 ## Implementation
 **Environment installation**
