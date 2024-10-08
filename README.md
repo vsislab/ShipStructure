@@ -27,9 +27,13 @@ According to the mmpose official documentation (https://github.com/open-mmlab/mm
 mv ./demo/slad_dataset.py mmpose-main/mmpose/datasets/datasets/body/
 mv -f ./demo/__init__.py mmpose-main/mmpose/datasets/datasets/body/
 mv ./demo/slad.py mmpose-main/configs/base/datasets/
+mkdir ./mmpose-main/configs/body_2d_keypoint/topdown_heatmap/slad/
+mv ./demo/td-hm_hrnet-w32_8xb64-210e_slad-256x192.py mmpose-main/configs/body_2d_keypoint/topdown_heatmap/slad/
 ```
 **Example demonstration**
-  
+Example demonstration using ./demo/td-hm_hrnet-w32_8xb64-210e_slad-256x192.py, following the naming conventions similar to the mmpose official website: 'td' denotes top-down, 'hm' signifies heatmap, 'hrnet-w32' represents the algorithm name, '8xb64' indicates the number of GPUs and batch size, '210e' represents the number of epochs, 'slad' indicates the usage of the SLAD dataset, and '256x192' denotes the width and height of the input image.
+
+
 ## Implementation
 **Environment installation**
 ```shell
