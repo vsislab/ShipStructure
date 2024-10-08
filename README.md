@@ -17,7 +17,8 @@ The structure of the repository is as follows：
 * ./utils: Utility functions for training, inference, and postprocessing.
 * ./scripts: Scripts related to model training, inference, image and code download, visualization.
 * ./visualization: CAM image visualization and experimental performance saving.
-
+* ./demo: Demonstration of ship detection task using mmpose.
+  
 ## Implementation
 **Environment installation**
 ```shell
