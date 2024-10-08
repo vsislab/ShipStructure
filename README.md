@@ -33,6 +33,7 @@ mv ./demo/td-hm_hrnet-w32_8xb64-210e_slad-256x192.py mmpose-main/configs/body_2d
 **Example demonstration**
 Example demonstration using ./demo/td-hm_hrnet-w32_8xb64-210e_slad-256x192.py, following the naming conventions similar to the mmpose official website: 'td' denotes top-down, 'hm' signifies heatmap, 'hrnet-w32' represents the algorithm name, '8xb64' indicates the number of GPUs and batch size, '210e' represents the number of epochs, 'slad' indicates the usage of the SLAD dataset, and '256x192' denotes the width and height of the input image.
 
+Since the SLAD dataset is provided in the COCO standard format, configuration settings can be referenced from the COCO format. The main modifications involve setting dataset_type to 'SLADDataset' and data_root to 'data/slad/'. Here, the data format follows the COCO standard layout for organizing image data and annotations. To simplify modifications, bbox_file can be directly replaced with the COCO file.
 
 ## Implementation
 **Environment installation**
