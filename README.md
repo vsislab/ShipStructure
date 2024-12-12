@@ -6,7 +6,7 @@ By summarizing the locations of such areas in ships, we define 20 ship landmarks
 If you are having trouble obtaining the image, you can access it using the following link.
 
 [![Click here to view GoogleDriver](https://storage.googleapis.com/googwebreview.appspot.com/grow-ext-cloud-images-uploads/7uffzv9dk4sn-3652TCzauH9jaL0QJ8H6FM-bfed64c7e8da9ac20d439f436570f955-Drive_Full_Logo_2x.svg)](https://drive.google.com/file/d/1WdXaWr9RpUwD2pf7drtJCxdYCCYBf2r3/view?usp=sharing)  
-[![Click here to view BaiduDriver](https://nd-static.bdstatic.com/m-static/v20-main/home/img/icon-home-new.b4083345.png)](https://drive.google.com/file/d/1WdXaWr9RpUwD2pf7drtJCxdYCCYBf2r3/view?usp=sharing)
+[![Click here to view BaiduDriver](https://nd-static.bdstatic.com/m-static/v20-main/home/img/icon-home-new.b4083345.png)](链接:https://pan.baidu.com/s/1udII7xztHiVqqSfV6wfn2Q?pwd=crwy)
 
 ## Code Overview
 The structure of the repository is as follows：
